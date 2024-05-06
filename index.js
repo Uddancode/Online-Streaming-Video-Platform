@@ -43,7 +43,7 @@ app.use(express.urlencoded({extended:true}))
 app.use("/uploads", express.static("uploads"))
 
 app.get('/', function(req,res){
-    res.json({message: "Hello world"})
+    res.send(5173) ; 
 })
 
 app.post("/upload", upload.single('file'), function(req,res){
